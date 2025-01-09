@@ -1,0 +1,21 @@
+.DS_Store
+Thumbs.db
+node_modules/
+dist/
+*.log
+*.tmp
+
+AppData/
+Contacts/
+Downloads/
+Favorites/
+Links/
+Music/
+Pictures/
+Saved Games/
+Searches/
+Videos/
+Desktop.ini
+NTUSER.DAT*
+*.blf
+*.regtrans-ms
