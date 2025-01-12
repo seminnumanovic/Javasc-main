@@ -4,7 +4,7 @@
 // .nextSibling
 // .previousSibling
 // promenljiva.innerHTML = '<element>itd</element>'
-//promenljiva.substring(prvaPozicija, drugaPozicija)
+//promenljiva.substring(Start, End)
 ///promenljiva.indexOf('karakter')
 let allTotal = 0;
 function addToCart(element){
@@ -37,9 +37,6 @@ function addToCart(element){
     {
         alert('Dodaj kolicinu');
     }
-
-    
-    
     
 }
 

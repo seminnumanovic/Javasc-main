@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="movieList">
+        <div class="wrapper">
+            <div class="movie">
+                <img src="./interstellar_slika.jpg" class="slika" alt="">
+                <p>
+                    When Earth becomes uninhabitable in the future, a <br> farmer and ex-NASA pilot, Joseph Cooper, is tasked <br> to pilot a spacecraft                </p>
+                <h4 class="price">Price: $10</h4>
+                <div class="buttonWrapper">
+                    <button class="addButton" onclick="addMovie(this)">Add</button>
+                    <div class="emptyDiv"></div>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="./fightclub_slika.jpg" class="slika" alt="">
+                <p>
+                    An insomniac office worker and a devil-may-care <br> soap  maker form an underground fight <br> club that evolves into much more                </p>
+                <h4 class="price">Price: $15</h4>
+                <div class="buttonWrapper">
+                    <button class="addButton" onclick="addMovie(this)">Add</button>
+                    <div class="emptyDiv"></div>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="./inception_slika.jpg" class="slika" id= "slika" alt="">
+                <p>
+                    A thief who steals corporate secrets through the use of <br>dream-sharing technology is given the inverse task <br> of planting an idea into the mind of a CEO.
+                </p>
+                <h4 class="price">Price: $20</h4>
+                <div class="buttonWrapper">
+                    <button class="addButton" onclick="addMovie(this)">Add</button>
+                    <div class="emptyDiv"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="totalPrice">
+        <h3>Total: </h3>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

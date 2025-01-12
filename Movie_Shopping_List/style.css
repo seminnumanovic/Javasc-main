@@ -1,0 +1,74 @@
+*{
+    font-family: "Montserrat", serif;
+    color: white;
+
+}
+body{
+    background: rgb(3,36,52);
+background: linear-gradient(90deg, rgba(3,36,52,1) 0%, rgba(9,121,120,1) 100%, rgba(16,0,255,0.9052871148459384) 100%);
+}
+
+.wrapper{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.movieList{
+    display: flex;
+}
+.movie{
+    border :1px solid black;
+    border-radius: 20px;
+    background-color: rgba(37, 14, 74, 0.573);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 31%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.slika{
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+
+}
+#slika{
+    height: 370px;
+}
+
+.movie p{
+    font-size: 12px;
+    text-align: center;
+}
+
+.addButton{
+    height: 35px;
+    width: 100px;
+    border-radius: 7px;
+    border: none;
+    color: black;
+}
+.totalPrice{
+    display: flex;
+    margin-top: 20px;
+    width: 90px;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+.buttonWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+}
+.removeButton{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: black;
+}
