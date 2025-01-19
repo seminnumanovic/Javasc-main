@@ -1,10 +1,10 @@
-function testing(){
-    let input = document.querySelector('#email');
-    let value = input.value;
+let div = document.querySelector('.div');
+div.addEventListener('mouseenter', (event) =>{
+    div.style.backgroundColor = event.type === 'mouseover' ? 'blue' : 'red';
+    // div.style.backgroundColor = event.type === 'mouseover' ? 'blue' : 'red';
 
-    if(value.includes('@') && value.includes('.')){
-        
-    } else {
-        alert('Neispravno upisan email');
-    }
-}
+});
+// div.addEventListener('mouseout', () =>{
+//     div.style.backgroundColor = "blue";
+
+// })
