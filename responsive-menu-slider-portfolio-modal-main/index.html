@@ -11,7 +11,7 @@
 	<div class="header">
 		<img src="img/logo.png">
 
-		<button onclick="mobileMenu()">MENU</button>
+		<button >MENU</button>
 
 		<ul>
 			<li><a href="#">Početna</a></li>
@@ -25,7 +25,7 @@
 	<h2>Galerija</h2>
 
 	<div class="slider-wrapper">
-        <button id="left-btn"><i class=""></i></button>
+        <button id="left-btn"><i class="arrow"></i></button>
         <div class="slider-images">
         	<img src="img/slide1.jpg">
         	<img src="img/slide2.jpg">
@@ -38,11 +38,12 @@
 
     <div class="portfolio-wrapper">
 	    <div class="portfolio-categories">
-	    	<button data-category='sve' onclick="portfolioSort(this)">Sve</button>
-	    	<button data-category='restorani' onclick="portfolioSort(this)" class="brown">Restorani</button>
-	    	<button data-category='hoteli' onclick="portfolioSort(this)" class="blue">Hoteli</button>
-	    	<button data-category='korporacije' onclick="portfolioSort(this)" class="green">Korporacije</button>
-	    	<button data-category='ostalo' onclick="portfolioSort(this)" class="rose">Ostalo</button>
+	    	<button data-category='sve' >Sve</button>
+	    	<button data-category='restorani'  class="brown">Restorani</button>
+	    	<button data-category='hoteli'  class="blue">Hoteli</button>
+	    	<button data-category='korporacije'  class="green">Korporacije</button>
+			<button data-category='automobili'  class="yellow">Automobili</button>
+	    	<button data-category='ostalo'  class="rose">Ostalo</button>
 	    </div>
 
 	    <div class="portfolio-items">
@@ -61,6 +62,10 @@
 	    	<div class="portfolio-single-item green" data-category='korporacije'>
 	    		<h3>Korporacija 1</h3>
 	    	</div>
+			
+			<div class="portfolio-single-item yellow" data-category='automobili'>
+	    		<h3>Automobil 1</h3>
+	    	</div>
 
 	    	<div class="portfolio-single-item brown" data-category='restorani'>
 	    		<h3>Restoran 1</h3>
@@ -73,19 +78,28 @@
 	    	<div class="portfolio-single-item blue" data-category='hoteli'>
 	    		<h3>Hotel 2</h3>
 	    	</div>
+			
+			<div class="portfolio-single-item yellow" data-category='automobili'>
+	    		<h3>Automobil 2</h3>
+	    	</div>
 
 	    	<div class="portfolio-single-item green" data-category='korporacije'>
 	    		<h3>Korporacija 2</h3>
+	    	</div>
+			
+			<div class="portfolio-single-item yellow" data-category='automobili'>
+	    		<h3>Automobil 3</h3>
 	    	</div>
 
 	    	<div class="portfolio-single-item brown" data-category='restorani'>
 	    		<h3>Restoran 2</h3>
 	    	</div>
+			
 	    </div>
     </div>
 
     <div class="modal-section">
-    	<button onclick="openModal()">Modal Button</button>
+    	<button id="openModal">Modal Button</button>
     </div>
 
 

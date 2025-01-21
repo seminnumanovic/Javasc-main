@@ -1,5 +1,7 @@
 //Responsive menu
-const mobileMenu = () => {
+let mobileMenuBtn = document.querySelector('.header button');
+
+mobileMenuBtn.addEventListener('click', () => {
     let menu = document.querySelector('.header ul');
     let btn = document.querySelector('.header button');
 
@@ -10,7 +12,9 @@ const mobileMenu = () => {
         menu.style.display = 'none';
         btn.innerText = 'MENU';
     }
-}
+});
+    
+
 
 //Gallery
 
@@ -49,12 +53,16 @@ const displayNone = () => {
     })
 }
 
+// Portfolio Sort
 
-const portfolioSort = (button) => {
-    let category = button.getAttribute('data-category');
-    let portfolioItems = document.querySelectorAll('.portfolio-single-item');
+let portfolioSortBtns = document.querySelectorAll('.portfolio-categories button');
 
-    portfolioItems.forEach((item) => {
+portfolioSortBtns.forEach((button) =>{
+    button.addEventListener('click', () => {
+        let category = button.getAttribute('data-category');
+        let portfolioItems = document.querySelectorAll('.portfolio-single-item');
+
+        portfolioItems.forEach((item) => {
         item.style.display = 'none';
     })
 
@@ -63,16 +71,21 @@ const portfolioSort = (button) => {
             item.style.display = 'block';
         });
     }
-
-    portfolioItems.forEach((item) => {
-        if(item.getAttribute('data-category').includes(category)){
-            item.style.display = 'block';
+    else{
+        portfolioItems.forEach((item) => {
+            if(item.getAttribute('data-category').includes(category)){
+                item.style.display = 'block';
+                }
+            });
         }
     });
-}
+});
+
+//Modal button
+let openModal = document.querySelector('#openModal');
 
 
-const openModal = () =>{
+const openModalFunc = () =>{
     let modalWindow = document.querySelector('.popup-modal');
     let overlay = document.querySelector('.overlay');
 
@@ -80,6 +93,8 @@ const openModal = () =>{
     overlay.style.display = 'block';
 
 }
+
+openModal.addEventListener('click', openModalFunc);
 
 let closeModal = document.querySelector('#closeModal');
 
